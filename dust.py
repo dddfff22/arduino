@@ -6,7 +6,6 @@ import time
 ser=serial.Serial("/dev/ttyACM0",9600)
 username="dddfff22"
 while True:
-    try:
       res= ser.readline()
       print(res.decode())
       temp=res.decode().split(" ")
@@ -57,7 +56,6 @@ while True:
       time.sleep(5)
       ser.flushInput()
       ser.flushOutput()
-    except:
       print("error")
 
 ser.close()
