@@ -10,18 +10,18 @@ while True:
       print(res.decode())
       temp=res.decode().split(" ")
       if len(temp)>2:
-        hu = temp[0]
-        tu = temp[3].split("C")[0]
+        hu = temp[3]
+        tu = temp[0].split("C")[0]
       else:
-        du=temp[0].split("\n")[0]
+        du=temp[0].split("\r")[0]
       res= ser.readline()
       print(res.decode())
       temp=res.decode().split(" ")
       if len(temp)>2:
-        hu = temp[0]
-        tu = temp[3].split("C")[0]
+        hu = temp[3]
+        tu = temp[0].split("C")[0]
       else:
-        du=temp[0].split("\n")[0]
+        du=temp[0].split("\r")[0]
       
 
       data = {
