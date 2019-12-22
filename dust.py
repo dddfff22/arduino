@@ -3,7 +3,7 @@ import json
 from urllib import request, parse
 import time
 
-ser=serial.Serial("dev/ttyACM0",9600)
+ser=serial.Serial("/dev/ttyACM0",9600)
 username="dddfff22"
 while True:
     try:
