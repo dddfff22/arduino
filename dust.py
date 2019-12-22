@@ -13,7 +13,7 @@ while True:
       if len(temp)>2:
         hu = temp[0]
         tu = temp[3].split("C")
-      else
+      else:
         du=temp[0].split("\n")[0]
       res= ser.readline()
       print(res.decode())
@@ -21,7 +21,7 @@ while True:
       if len(temp)>2:
         hu = temp[0]
         tu = temp[3].split("C")
-      else
+      else:
         du=temp[0].split("\n")[0]
       
 
